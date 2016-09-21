@@ -17,7 +17,7 @@ export class AutoComplete implements OnInit{
     packages: Observable<IPackages[]>;
     searchSubject = new Subject<string>();
     suggestions: string[];
-    search: ISearchArg;
+ //   search: ISearchArg;
     @ViewChild('repl') private replRef;
     @Output() q_change = new EventEmitter<string>();
 
@@ -29,7 +29,8 @@ export class AutoComplete implements OnInit{
 
 
     ngOnInit() {
-        this.packages = this.searchSubject
+      //  this.packages = 
+        this.searchSubject
             .asObservable()           // cast as Observable
             .debounceTime(300)        // wait for 300ms pause in events
             .distinctUntilChanged()   // ignore if next search term is same as previous

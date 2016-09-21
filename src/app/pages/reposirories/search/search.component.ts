@@ -16,7 +16,7 @@ import  { IAggsFilter } from './aggregations/aggregations.component';
 export class Search {
 
     status: boolean;
-    repos:IPackages[];
+    repos:any;
     aggs: IAggs;
 
     search_aggs: IAggsFilter;

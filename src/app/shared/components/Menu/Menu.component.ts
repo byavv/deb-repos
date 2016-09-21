@@ -8,7 +8,7 @@ import {MenuItem} from './components/MenuItem/MenuItem.component';
   selector: 'menu',
   styles: [require('./Menu.scss')],
   template: require('./Menu.html'),
-  directives:[MenuItem],
+  
   providers:[MenuService]
 })
 

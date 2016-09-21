@@ -23,7 +23,7 @@ import {
 
 import {
     Charge,
-    ElasticSearch,
+  //  ElasticSearch,
     PreLoad
 } from './services';
 

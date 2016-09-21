@@ -9,8 +9,7 @@ import { Charge, PreLoad } from './shared/services';
  */
 
 @Component({
-  selector: 'app',
-  pipes: [],
+  selector: 'app', 
   providers: [Charge, PreLoad],
   styles: [require('normalize.css'), require('./app.scss')],
   template: `

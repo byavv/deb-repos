@@ -6,8 +6,7 @@ import * as _ from 'lodash';
 @Component({
   selector: 'page-top',
   styles: [require('./PageTop.scss')],
-  template: require('./PageTop.html'),
-  directives: [Menu]
+  template: require('./PageTop.html') 
 })
 
 export class PageTop{

@@ -8,6 +8,7 @@ import { routing }       from './repositories.routing';
 
 //modules
 import { SearchModule } from './search/search.module';
+import { Compon } from './component';
 
 //providers
 import { PackagesService} from '../../shared/services/ElasticSearch';
@@ -26,10 +27,13 @@ import { PackagesService} from '../../shared/services/ElasticSearch';
   ],
   declarations: [
     /*Navigation,*/
-    Repositories
+    Repositories,
+    Compon
   ],
   providers: [
     PackagesService
   ]
 })
-export default class RepositoriesModule {}
+export default class RepositoriesModule {
+
+}
