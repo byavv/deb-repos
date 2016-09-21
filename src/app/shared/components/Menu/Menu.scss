@@ -1,0 +1,10 @@
+.top-menu{
+  color: inherit;
+}
+
+.menu-list{
+  & .menu-item{
+    display: inline-block;
+    position: relative;
+  }
+}

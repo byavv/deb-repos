@@ -1,0 +1,49 @@
+.top-form{
+  min-height: 42px;
+  padding: 5px 15px;
+  color: #fff;
+  background-color: #656a76;
+  border-bottom: 1px solid #4d515b;
+}
+
+
+
+
+.workspace{
+  padding: 25px 30px;
+  margin:29px 50px;
+
+  display: flex;
+  justify-content: space-between;
+
+
+
+  & .navigation, & .operations, & .search-res{
+    width: 35%;
+  }
+
+  & .navigation{
+    & .title{
+      font-size: 33px;
+      margin: 0 0 15px;
+      color: #716c6c;
+      font-weight: 100;
+      border-bottom:1px solid #dddddd;
+    }
+  }
+
+
+  & .operations{
+    align-self: center;
+    margin: 0 20px;
+    border: 1px dotted #1f6b7a;
+    border-radius: 10px;
+    opacity: 0.6;
+    min-height: 500px;
+  }
+
+  & .search-res{
+
+  }
+
+}

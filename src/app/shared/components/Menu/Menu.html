@@ -1,0 +1,7 @@
+<div class="top-menu">
+  <ul class="menu-list">
+    <menu-item [menuItem]="item"
+               *ngFor="let item of menuItems" class="menu-item"
+               [class.active]="item.selected"></menu-item>
+  </ul>
+</div>

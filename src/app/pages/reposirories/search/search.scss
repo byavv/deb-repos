@@ -1,0 +1,17 @@
+.search{
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 100%;
+  justify-content: flex-start;
+  align-items: center;
+
+  & .autocomplete{
+    width:70%;
+    margin-right: 15px;
+  }
+
+  & .aggregations{
+    width: 27%;
+  }
+}
+

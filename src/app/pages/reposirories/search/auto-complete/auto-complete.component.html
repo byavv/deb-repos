@@ -1,0 +1,22 @@
+<div class="autocomplete">
+    <span class="title">Поиск по репозиториям</span>
+
+    <div class="search">
+        <div class="input-group">
+            <input  #searchPackage (keyup)="search(searchPackage.value)"
+                    (keyup.enter)="handleQuery(searchPackage.value)" placeholder="название пакета"/>
+            <a class="input-btn">
+                <span class="fa fa-search"></span>
+            </a>
+        </div>
+
+        <!--[attr.data-val]=suggest-->
+        <ul #repl class="searched" [class.active]="suggestions && suggestions.length > 0">
+            <li *ngFor="let suggest of suggestions" (click)="selectQuery(suggest.name)">
+                <a>{{suggest.name}}  <span class="vers"> <i class="fa fa-code-fork" aria-hidden="true"></i> {{suggest.doc_count}}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>

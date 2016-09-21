@@ -1,0 +1,21 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- base url -->
+    <base href="<%= webpackConfig.metadata.baseUrl %>">
+</head>
+
+<body>
+<app></app>
+
+<div id="preloader">
+    <div></div>
+</div>
+
+<% if (webpackConfig.metadata.isDevServer && webpackConfig.metadata.HMR !== true) { %>
+<!-- Webpack Dev Server reload -->
+<script src="/webpack-dev-server.js"></script>
+<% } %>
+
+</body>
+</html>

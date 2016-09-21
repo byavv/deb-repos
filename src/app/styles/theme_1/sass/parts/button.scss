@@ -1,0 +1,13 @@
+.btn {
+  padding: 2px 5px;
+  color: #000000;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+
+  &.btn-inverse {
+    border-color: #444444;
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+}

@@ -1,0 +1,85 @@
+input, select {
+  height: 32px;
+  padding: 0 15px;
+  width:100%;
+  font-size: 14px;
+  color: #4d515b;
+}
+
+
+.input-group{
+  display: flex;
+
+
+  flex: 0 0 auto;
+
+  & :first-child{
+    border-width: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+
+  }
+
+  & :last-child {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    display: flex;
+    align-items: center;
+
+  }
+
+  & .input-btn{
+    color: #444444;
+    background-color: #ecf0f1;
+    border: 1px solid #ecf0f1;
+    padding: 0 15px;
+  }
+}
+
+select{
+    display: none;
+}
+
+option {
+  margin: 5px 15px;
+}
+
+.select-box{
+  position: relative;
+  color: #000;
+
+  & .select {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding: 0 15px;
+    width:100%;
+    font-size: 14px;
+    background: #fff;
+  }
+
+  & .sel{
+    width:100%;
+    background: #fff;
+    position: absolute;
+    margin-top: 1px;
+    display: none;
+
+    &.active{
+      border: 1px solid #b4bcc2;
+      display: block;
+    }
+
+    & .options {
+      display: block;
+      padding: 5px 15px;
+      margin: 2px 0;
+
+      &:hover{
+        background: #E2ECF2;
+      }
+    }
+
+  }
+
+}

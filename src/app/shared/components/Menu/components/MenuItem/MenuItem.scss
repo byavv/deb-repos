@@ -1,0 +1,31 @@
+.menu-link{
+  color: inherit;
+  height: 100%;
+  display: block;
+  padding: 10px 14.5px;
+
+  &:hover{
+    color: #ffffff;
+    background-color: #555555;
+  }
+
+  &.active,
+  &:active{
+    color: #ffffff;
+    background-color: #41454c;
+
+    &:before{
+      content: "";
+      display: inline-block;
+      position: absolute;
+      border: 7px solid #656a76;
+      border-color: transparent transparent #656a76 transparent;
+      top: 31px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 0;
+      height: 0;
+    }
+  }
+}

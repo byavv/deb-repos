@@ -1,0 +1,25 @@
+
+
+<div class="select-box" (click)="handleClick($event)">
+    <div class="select"></div>
+
+    <a #options class="sel" [class.active]="isActive">
+        <div class="options" value="">Все репозитории</div>
+        <div class="options"
+             *ngFor="let repo of aggs?.repos"
+             [attr.data-val]="repo.name">
+            {{repo.name}}
+        </div>
+
+    </a>
+</div>
+
+
+<!--
+<select #reps (change)="handleRepos(reps.value)">
+    <option value="">Все репозитории</option>
+    <option *ngFor="let repo of aggs?.repos" [value]="repo.name"
+            [attr.selected]="repo.name === search_repos ? 'selected' : null">
+        {{repo.name}}
+    </option>
+</select>-->

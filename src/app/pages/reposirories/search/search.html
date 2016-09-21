@@ -1,0 +1,5 @@
+<div class="search">
+    <auto-complete class="autocomplete" (q_change)="handleQuery($event)"></auto-complete>
+
+    <aggregations class="aggregations" [data]=aggs (aggs_change)="handleAggs($event)"></aggregations>
+</div>
