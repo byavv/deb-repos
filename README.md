@@ -7,18 +7,18 @@
 Basic Usage
 
 # clone the repo
-$ git clone https://github.com/nodesha88/deb-repos.git
-$ cd deb-repos
+  git clone https://github.com/nodesha88/deb-repos.git
+  cd deb-repos
 
 # install 
-$ npm install
-$ typings install
+  npm install
+  typings install
 
 # build for development/production
-$ npm run build:dev
-$ npm run build:prod
+  npm run build:dev
+  npm run build:prod
 
 # run development/production
-$ npm run dev
-$ npm start    
+  npm run dev
+  npm start
 
